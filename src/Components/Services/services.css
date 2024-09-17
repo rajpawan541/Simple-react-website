@@ -1,34 +1,38 @@
-.services {
+.services-container {
     display: flex;
     width: 100%;
     align-items: center;
     justify-content: center;
-    margin-top: 100px;
+    flex-wrap: wrap; /* Allow wrapping to fit smaller screens */
+    margin-top: 10px;
 }
 
-.service-list {
+.service-item {
     width: 25%;
     text-align: center;
     margin: 10px;
     border: 1px solid rgb(214, 214, 214);
     box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
     padding-bottom: 20px;
+    position: relative; /* Ensure positioning context for the overlay */
 }
-.service-list p{
+
+.service-item p {
     padding: 10px;
 }
 
-.image-container {
+.service-image-container {
     position: relative; /* Parent container for img and overlay */
     width: 100%;
     padding-bottom: 10px;
 }
 
-.image-container img {
+.service-image-container img {
     width: 100%;
+    display: block; /* Ensure the image is a block element */
 }
 
-.overlay {
+.service-overlay {
     position: absolute;
     top: 0;
     left: 0;
@@ -38,7 +42,9 @@
     transition: background-color 0.4s ease;
 }
 
-.image-container:hover .overlay {
+.service-image-container:hover .service-overlay {
     background-color: rgba(0, 0, 0, 0.5); /* Color on hover over the image */
 }
+
+
 

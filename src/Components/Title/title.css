@@ -1,0 +1,9 @@
+.title{
+    text-align: center;
+    color: #212EA0;
+    font-weight: 600;
+    margin-top: 80px;
+}
+.title h4{
+    text-transform: uppercase;
+}

@@ -1,0 +1,35 @@
+.about{
+    display: flex;
+    width: 100%;
+    justify-content:center;
+    align-items: center;
+    margin: auto;
+    max-width: 90%;
+    margin-top: 80px;
+}
+
+.about-left{
+    flex-basis: 45%;
+    text-align: center;
+    padding: 10px;
+    position: relative;
+}
+.about-right{
+    flex-basis: 45%;
+    padding: 10px;
+}
+.about-img {
+    width: 100%;
+}
+.play-icon{
+    position: absolute;
+    width: 100px;
+    top: 40%;
+    left: 45%;
+}
+.about h1{
+  
+    margin-bottom: 20px;
+}
+h1,h4{ color: #212EA0;;
+}
